@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculatrice</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="calcul">
+            <div class="chiffre">
+                <label>Nombre 1:<input type="text" id="nb1"></input></label><br>
+                <label>Opérateur : 
+                <div>   
+                    <input type="radio" id="+" name="operateur" value="+" checked /><label for="+">+</label>
+                </div>
+                <div>
+                    <input type="radio" id="-" name="operateur" value="-"/><label for="-">-</label>
+                </div>
+                <div>
+                    <input type="radio" id="*" name="operateur" value="*"/><label for="*">*</label>
+                </div>
+                <div>
+                    <input type="radio" id="/" name="operateur" value="/"/><label for="/">/</label>
+                </div>
+                </label>
+                <label>Nombre 2:<input type="text" id="nb2"></input></label>
+            </div>
+            <div class="controls">
+                <button id="calcul" onclick="valeurs()">Calcul</button>
+            </div>
+            <div class="result">
+                <p id="resultat"></p>
+            </div>
+        </div>
+        <script src="script1.js"></script>
+    </body>
+</html>

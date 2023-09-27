@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #bbbcb8;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.card:hover{
+    transform: scale(0.9);
+}
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
